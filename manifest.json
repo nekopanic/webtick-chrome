@@ -1,0 +1,21 @@
+{
+    "name": "Webtick",
+    "version": "1.1",
+    "manifest_version": 2,
+    "description": "Reclaim your screen! Hide common web menus and banners by default, then display them with the backtick/tilde key (`/~).",
+    "browser_action": {
+	"default_icon": "icon-48.png"
+    },
+    "icons": { "16": "icon-16.png",
+               "48": "icon-48.png",
+               "128": "icon-128.png" },
+    "permissions": [
+    ],
+    "content_scripts": [
+	{
+	    "matches": ["http://www.google.com/reader*"],
+	    "css": ["webtick.css"],
+	    "js": ["webtick.js"]
+	}
+    ]
+}
