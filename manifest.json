@@ -13,7 +13,7 @@
     ],
     "content_scripts": [
 	{
-	    "matches": ["http://www.google.com/reader*"],
+	    "matches": ["*://www.google.com/reader*", "*://groups.google.com/*", "*://www.google.com/calendar/*"],
 	    "css": ["webtick.css"],
 	    "js": ["webtick.js"]
 	}
